@@ -49,14 +49,14 @@ body {
             color: #fff;
             outline: none;
         }
-        .submit-btn {
+        #submit-btn {
             background: $nephritis;
             cursor: pointer;
             color: #fff;
             transition-property: background, color;
             transition-duration: 100ms;
         }
-        .submit-btn:hover {
+        #submit-btn:hover {
             background: $wet-asphalt;
             color: $nephritis;
             box-shadow: 0 0 0 2px $nephritis;
