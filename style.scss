@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+$wet-asphalt: #34495e;
+$mid-night: #2c3e50;
+$clouds: #ecf0f1;
+$nephritis: #27ae60;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-container {
+    background-color: $wet-asphalt;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 400px;
+    width: 32vw;
+    border-radius: 40px;
+
+
+
+    .form-header {
+        color: white;
+        font-size: 2.2rem;
+    }
+    form {
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        input {
+            border: none;
+            background: $mid-night;
+            padding: 10px;
+            border-radius: 10px;
+            &::placeholder {
+                color: $clouds;
+            }
+            color: #fff;
+            outline: none;
+        }
+        .submit-btn {
+            background: $nephritis;
+            cursor: pointer;
+            color: #fff;
+            transition-property: background, color;
+            transition-duration: 100ms;
+        }
+        .submit-btn:hover {
+            background: $wet-asphalt;
+            color: $nephritis;
+            box-shadow: 0 0 0 2px $nephritis;
+            -moz-box-shadow: 0 0 0 2px $nephritis;
+        }
+    }
+}
